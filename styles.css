@@ -1,0 +1,68 @@
+.welcome {
+    display: flex;
+    height: 400px;
+    background-color: #00264d;
+    color: white;
+    font-size: 45px;
+    font-stretch: expanded;
+    align-self: center;
+    margin: 55px;
+    text-align: center;
+    padding: 100px;
+}
+.blackline {
+    background-color: black;
+    width: 100%;
+
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 50px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.pot {
+  text-align: center;
+  
+}
+.footer {
+
+  font-family: "Copperplate", "Times New Roman", arial;
+  color: #ECE4DA !important;
+  font-size: 30px;
+  background-color: #000000 !important;
+}
+.phys {
+      font-family: "Copperplate", "Times New Roman", arial;
+      color: #006080;
+      text-align: center;
+      font-size: 45px;
+      background-color: #999966 !important;
+      border-bottom-color: black;
+      border-bottom-style: solid;
+
+}
+.underline {
+    text-decoration: underline;
+}
+.listrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.blue {
+    color: #006080;
+}
+.donate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #999966;
+    color: #006080;
+    padding: 60px;
+   text-align: center;
+   gap: 40px;
+}
