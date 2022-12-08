@@ -411,7 +411,7 @@
         <h4>Momentum Equations</h4>
         <li>
 
-            <p><strong>p = m * v (Momentum = Mass x Velocity</strong></p>
+            <p><strong>p = m * v (Momentum = Mass x Velocity)</strong></p>
             <div class="listrow">
                 <div>
                     <form>
@@ -448,7 +448,148 @@
                 </div>
             </div>
         </li>
+        <li>
+
+            <p><strong>Δp = F * Δt (Impulse(aka change in Momentum) = Net Force x Change in Time)</strong></p>
+            <div class="listrow">
+                <div>
+                    <form>
+                        <p class="underline"><em>Solve for Impulse(Change in Momentum)</em></p>
+                        <label for="force29">Net Force(N):</label><br>
+                        <input type="text" id="force29" name="force29"><br>
+                        <label for="time29">Change in Time(s):</label><br>
+                        <input type="text" id="time29" name="time29"><br><br>
+                        <input id="submit29" type="submit" value="Submit">
+                    </form>
+                    <p id="k29"></p>
+                </div>
+               <div>
+                    <form>
+                        <p class="underline"><em>Solve for Net Force</em></p>
+                        <label for="impulse30">Impulse(Change in Momentum)(N*s):</label><br>
+                        <input type="text" id="impulse30" name="impulse30"><br>
+                        <label for="time30">Change in Time(s):</label><br>
+                        <input type="text" id="time30" name="time30"><br><br>
+                        <input id="submit30" type="submit" value="Submit">
+                    </form>
+                    <p id="k30"></p>
+                </div>
+               <div>
+                    <form>
+                        <p class="underline"><em>Solve for Change in Time</em></p>
+                        <label for="impulse31">Impulse(Change in Momentum)(N*s):</label><br>
+                        <input type="text" id="impulse31" name="impulse31"><br>
+                        <label for="force31">Net Force(N):</label><br>
+                        <input type="text" id="force31" name="force31"><br><br>
+                        <input id="submit31" type="submit" value="Submit">
+                    </form>
+                    <p id="k31"></p>
+                </div>
+            </div>
+        </li>
     </ul>
+        <hr style="height:2px;border-width:0;color:black;background-color:black">
+        <ul class="list">
+        <h4>Energy Equations</h4>
+        <li>
+
+            <p><strong>K = 1/2 * m * v<sup>2</sup> (Kinetic Energy = 1/2 x Mass x Velocity Squared)</strong></p>
+            <div class="listrow">
+                <div>
+                    <form>
+                        <p class="underline"><em>Solve for Kinetic Energy</em></p>
+                        <label for="mass32">Mass(kg):</label><br>
+                        <input type="text" id="mass32" name="mass32"><br>
+                        <label for="velocity32">Velocity(m/s):</label><br>
+                        <input type="text" id="velocity32" name="velocity32"><br><br>
+                        <input id="submit32" type="submit" value="Submit">
+                    </form>
+                    <p id="k32"></p>
+                </div>
+                <div>
+                    <form>
+                        <p class="underline"><em>Solve for Mass</em></p>
+                        <label for="kineticenergy33">Kinetic Energy(J):</label><br>
+                        <input type="text" id="kineticenergy33" name="kineticenergy33"><br>
+                        <label for="velocity33">Velocity(m/s):</label><br>
+                        <input type="text" id="velocity33" name="velocity33"><br><br>
+                        <input id="submit33" type="submit" value="Submit">
+                    </form>
+                    <p id="k33"></p>
+                </div>
+               <div>
+                    <form>
+                        <p class="underline"><em>Solve for Velocity</em></p>
+                        <label for="kineticenergy34">Kinetic Energy(J):</label><br>
+                        <input type="text" id="kineticenergy34" name="kineticenergy34"><br>
+                        <label for="mass34">Mass(kg):</label><br>
+                        <input type="text" id="mass34" name="mass34"><br><br>
+                        <input id="submit34" type="submit" value="Submit">
+                    </form>
+                    <p id="k34"></p>
+                </div>
+            </div>
+        </li>
+        <li>
+
+            <p><strong>ΔE = W = F * d<sub>||</sub> = F * d * cos(θ) (Change in Energy = Work = Force x Parallel Distance = Force x Distance x Cosine(θ))</strong></p>
+            <div class="listrow">
+                <div>
+                    <form>
+                        <p class="underline"><em>Solve for Work or Change in Energy</em></p>
+                        <label for="force35">Force(N):</label><br>
+                        <input type="text" id="force35" name="force35"><br>
+                        <label for="distance35">Distance(m):</label><br>
+                        <input type="text" id="distance35" name="distance35"><br>
+                        <label for="angle35">Angle(put 0 if distance is parallel to force)(degrees):</label><br>
+                        <input type="text" id="angle35" name="angle35"><br><br>
+                        <input id="submit35" type="submit" value="Submit">
+                    </form>
+                    <p id="k35"></p>
+                </div>
+              <div>
+                    <form>
+                        <p class="underline"><em>Solve for Force</em></p>
+                        <label for="work36">Work or Change in Energy(J):</label><br>
+                        <input type="text" id="work36" name="work36"><br>
+                        <label for="distance36">Distance(m):</label><br>
+                        <input type="text" id="distance36" name="distance36"><br>
+                        <label for="angle36">Angle(put 0 if distance is parallel to force)(degrees):</label><br>
+                        <input type="text" id="angle36" name="angle36"><br><br>
+                        <input id="submit36" type="submit" value="Submit">
+                    </form>
+                    <p id="k36"></p>
+                </div>
+               <div>
+                    <form>
+                        <p class="underline"><em>Solve for Distance</em></p>
+                        <label for="work37">Work or Change in Energy(J):</label><br>
+                        <input type="text" id="work37" name="work37"><br>
+                        <label for="force37">Force(N):</label><br>
+                        <input type="text" id="force37" name="force37"><br>
+                        <label for="angle37">Angle(put 0 if distance is parallel to force)(degrees):</label><br>
+                        <input type="text" id="angle37" name="angle37"><br><br>
+                        <input id="submit37" type="submit" value="Submit">
+                    </form>
+                    <p id="k37"></p>
+                </div>
+                <div>
+                    <form>
+                        <p class="underline"><em>Solve for The Angle </em></p>
+                        <label for="work38">Work or Change in Energy(J):</label><br>
+                        <input type="text" id="work38" name="work38"><br>
+                        <label for="force38">Force(N):</label><br>
+                        <input type="text" id="force38" name="force38"><br>
+                        <label for="distance38">Distance(m):</label><br>
+                        <input type="text" id="distance38" name="distance38"><br><br>
+                        <input id="submit38" type="submit" value="Submit">
+                    </form>
+                    <p id="k38"></p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
 
 
 

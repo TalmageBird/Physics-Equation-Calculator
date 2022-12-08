@@ -274,7 +274,7 @@ function K24(e) {
     const ac = document.getElementById("acceleration24").value;
     const r = document.getElementById("radius24").value;
     const v = Math.sqrt(+ac * +r);
-    const element = " <div> <h4 class='blue'>Linear Velocity:</h4><p class='blue'>" + v +" m/s</p></div>";
+    const element = " <div> <h4 class='blue'>Linear Velocity:</h4><p class='blue'>" + v +" Meters per Second</p></div>";
     document.getElementById('k24').innerHTML = element;
 }
 
@@ -285,7 +285,7 @@ function K25(e) {
     const ac = document.getElementById("acceleration25").value;
     const v = document.getElementById("velocity25").value;
     const r = (+v * +v) / ac;
-    const element = " <div> <h4 class='blue'>Radius:</h4><p class='blue'>" + r +" m</p></div>";
+    const element = " <div> <h4 class='blue'>Radius:</h4><p class='blue'>" + r +" Meters</p></div>";
     document.getElementById('k25').innerHTML = element;
 }
 
@@ -307,7 +307,7 @@ function K27(e) {
     const p = document.getElementById("momentum27").value;
     const v = document.getElementById("velocity27").value;
     const m = +p / +v;
-    const element = " <div> <h4 class='blue'>Mass:</h4><p class='blue'>" + m +" kg</p></div>";
+    const element = " <div> <h4 class='blue'>Mass:</h4><p class='blue'>" + m +" Kilograms</p></div>";
     document.getElementById('k27').innerHTML = element;
 }
 
@@ -318,6 +318,122 @@ function K28(e) {
     const p = document.getElementById("momentum28").value;
     const m = document.getElementById("mass28").value;
     const v = +p / +m;
-    const element = " <div> <h4 class='blue'>Velocity:</h4><p class='blue'>" + v +" m/s</p></div>";
+    const element = " <div> <h4 class='blue'>Velocity:</h4><p class='blue'>" + v +" Meters per Second</p></div>";
     document.getElementById('k28').innerHTML = element;
 }
+
+document.getElementById('submit29').addEventListener('click',(e) => K29(e));
+
+function K29(e) {
+    e.preventDefault();
+    const f = document.getElementById("force29").value;
+    const t = document.getElementById("time29").value;
+    const p = +f * +t;
+    const element = " <div> <h4 class='blue'>Impulse(Change in Momentum):</h4><p class='blue'>" + p +" Newton Seconds</p></div>";
+    document.getElementById('k29').innerHTML = element;
+}
+
+document.getElementById('submit30').addEventListener('click',(e) => K30(e));
+
+function K30(e) {
+    e.preventDefault();
+    const p = document.getElementById("impulse30").value;
+    const t = document.getElementById("time30").value;
+    const f = +p / +t;
+    const element = " <div> <h4 class='blue'>Net Force:</h4><p class='blue'>" + f +" Newtons</p></div>";
+    document.getElementById('k30').innerHTML = element;
+}
+
+document.getElementById('submit31').addEventListener('click',(e) => K31(e));
+
+function K31(e) {
+    e.preventDefault();
+    const p = document.getElementById("impulse31").value;
+    const f = document.getElementById("force31").value;
+    const t = +p / +f;
+    const element = " <div> <h4 class='blue'>Change in Time:</h4><p class='blue'>" + t +" Seconds</p></div>";
+    document.getElementById('k31').innerHTML = element;
+}
+
+document.getElementById('submit32').addEventListener('click',(e) => K32(e));
+
+function K32(e) {
+    e.preventDefault();
+    const m = document.getElementById("mass32").value;
+    const v = document.getElementById("velocity32").value;
+    const ke = .5 * +m * +v * +v;
+    const element = " <div> <h4 class='blue'>Kinetic Energy:</h4><p class='blue'>" + ke +" Joules</p></div>";
+    document.getElementById('k32').innerHTML = element;
+}
+
+document.getElementById('submit33').addEventListener('click',(e) => K33(e));
+
+function K33(e) {
+    e.preventDefault();
+    const ke = document.getElementById("kineticenergy33").value;
+    const v = document.getElementById("velocity33").value;
+    const m = (2 * +ke) / (+v * +v);
+    const element = " <div> <h4 class='blue'>Mass:</h4><p class='blue'>" + m +" Kilograms</p></div>";
+    document.getElementById('k33').innerHTML = element;
+}
+
+document.getElementById('submit34').addEventListener('click',(e) => K34(e));
+
+function K34(e) {
+    e.preventDefault();
+    const ke = document.getElementById("kineticenergy34").value;
+    const m = document.getElementById("mass34").value;
+    const v = Math.sqrt((2 * +ke) / m);
+    const element = " <div> <h4 class='blue'>Velocity:</h4><p class='blue'>" + v +" Meters per second</p></div>";
+    document.getElementById('k34').innerHTML = element;
+}
+
+document.getElementById('submit35').addEventListener('click',(e) => K35(e));
+
+function K35(e) {
+    e.preventDefault();
+    const f = document.getElementById("force35").value;
+    const d = document.getElementById("distance35").value;
+    const ang = document.getElementById("angle35").value;
+    const w = +f * +d * Math.cos((+ang * Math.PI) / 180);
+    const element = " <div> <h4 class='blue'>Work or Change in Energy:</h4><p class='blue'>" + w +" Joules</p></div>";
+    document.getElementById('k35').innerHTML = element;
+}
+
+document.getElementById('submit36').addEventListener('click',(e) => K36(e));
+
+function K36(e) {
+    e.preventDefault();
+    const w = document.getElementById("work36").value;
+    const d = document.getElementById("distance36").value;
+    const ang = document.getElementById("angle36").value;
+    const f = +w / (+d * Math.cos((+ang * Math.PI) / 180));
+    const element = " <div> <h4 class='blue'>Force:</h4><p class='blue'>" + f +" Newtons</p></div>";
+    document.getElementById('k36').innerHTML = element;
+}
+
+document.getElementById('submit37').addEventListener('click',(e) => K37(e));
+
+function K37(e) {
+    e.preventDefault();
+    const w = document.getElementById("work37").value;
+    const f = document.getElementById("force37").value;
+    const ang = document.getElementById("angle37").value;
+    const d = +w / (+f * Math.cos((+ang * Math.PI) / 180));
+    const element = " <div> <h4 class='blue'>Distance:</h4><p class='blue'>" + d +" Meters</p></div>";
+    document.getElementById('k37').innerHTML = element;
+}
+
+document.getElementById('submit38').addEventListener('click',(e) => K38(e));
+
+function K38(e) {
+    e.preventDefault();
+    const w = document.getElementById("work38").value;
+    const f = document.getElementById("force38").value;
+    const d = document.getElementById("distance38").value;
+    const ang = (180 * (Math.acos(+w / (+f * +d)))) / Math.PI;
+    const element = " <div> <h4 class='blue'>Angle:</h4><p class='blue'>" + ang +" Degrees</p></div>";
+    document.getElementById('k38').innerHTML = element;
+}
+
+
